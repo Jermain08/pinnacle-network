@@ -1,0 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+};
+
+export default function TermsPage() {
+  return (
+    <section className="mx-auto max-w-3xl px-6 py-24 lg:px-10">
+      <h1 className="font-[family-name:var(--font-display)] text-3xl font-medium text-[var(--color-paper)]">
+        Terms &amp; Conditions
+      </h1>
+      <p className="mt-6 text-sm leading-relaxed text-[var(--color-mist)]">
+        This page is a placeholder. Final terms of use should be reviewed and
+        provided by Pinnacle Network &amp; Security LLC and/or legal counsel
+        before publishing.
+      </p>
+    </section>
+  );
+}
