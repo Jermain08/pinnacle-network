@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { footerNav, siteConfig } from "../../../lib/site-data";
 
@@ -7,10 +8,19 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <p className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--color-paper)]">
-              {siteConfig.name}
-            </p>
-            <p className="mt-2 text-sm text-[var(--color-mist)]">{siteConfig.tagline}</p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/pinnacle-logo.jpeg"
+                alt="Pinnacle Network & Security"
+                width={824}
+                height={553}
+                className="h-30 w-auto sm:h-20 rounded-xl"
+              />
+              {/* <p className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--color-paper)]">
+                {siteConfig.name}
+              </p> */}
+            </div>
+            <p className="mt-4 text-sm text-[var(--color-mist)]">{siteConfig.tagline}</p>
             <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-[var(--color-signal)]">
               {siteConfig.slogan}
             </p>
