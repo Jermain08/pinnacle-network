@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   description:
     "Pinnacle Network & Security provides enterprise network engineering, cybersecurity, Zero Trust architecture, firewall solutions, and infrastructure modernization.",
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/apple-icon.png",
+    icon: "/images/pinnacle-logo.jpeg",
+    shortcut: "/images/pinnacle-logo.jpeg",
+    apple: "/images/pinnacle-logo.jpeg",
   },
 };
 
